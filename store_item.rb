@@ -45,7 +45,7 @@ class Items
   end
 
   def sale
-    @price = 0.80 * @price 
+    @price = 0.75 * @price 
   end
 
 end
