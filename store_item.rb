@@ -21,28 +21,7 @@ class Items
     @length = input_options[:length]
     @price = input_options[:price]
   end
-
-  # def initialize(input_color, input_length, input_price)
-  #   @color = input_color
-  #   @length = input_length
-  #   @price = input_price
-  # end
-
-  # def color 
-  #   @color
-  # end
-
-  # def length 
-  #   @length
-  # end
-
-  # def price
-  #   @price
-  # end
-
-  def print_info
-    puts "The #{color}, #{length} yoga mat is #{price}."   
-  end
+  
 
   def sale
     @price = 0.75 * @price 
@@ -51,8 +30,24 @@ class Items
 end
 
 
+class Life < Items
+
+  def shelf_life
+    @shelf_life
+  end
+
+  def initialize(input_options)
+    super
+    @shelf_life = input_options[:shelf_life]
+  end
+
+  def print_info
+    puts "The #{color}, #{length} yoga mat is #{price} and lasts #{shelf_life}."   
+  end
+end
+
 # item1 = Items.new("green", "long", 100)
-item2 = Items.new({:color => "green", :price => 50, length: "extra long"})
+item2 = Life.new({:color => "green", :price => 50, length: "extra long", shelf_life: "2 years"})
 
 item2.sale
 # item1.print_info
