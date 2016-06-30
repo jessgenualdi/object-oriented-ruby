@@ -1,4 +1,4 @@
-# yoga_mat = {"color" => "yellow", "length" => "extra long", "price" => 100}
+  # yoga_mat = {"color" => "yellow", "length" => "extra long", "price" => 100}
 # yoga_mat2 = {"color" => "pink", "length" => "medium", "price" => 80}
 # yoga_mat3 = {"color" => "blue", "length" => "short", "price" => 70}
 
